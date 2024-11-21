@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>The data is {{NotesData}}</h1>
+    <h1>These are the Notes</h1>
+
+    <ui>
+         {% for note in NotesData %}
+        <li>
+           {{note.title}}
+        </li>
+        {%endfor%}
+    </ui>
 </body>
 </html>
